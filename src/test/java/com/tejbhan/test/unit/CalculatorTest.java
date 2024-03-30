@@ -41,5 +41,11 @@ class CalculatorTest {
         });
     }
 
+    @Test
+    void testDivideByNonZero() {
+        Assertions.assertDoesNotThrow(() -> {
+            calculator.divide(10, 2);
+        });
+    }
 
 }
